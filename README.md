@@ -1,4 +1,4 @@
-# AutoPlay Pokemeow Discord 🤖
+# AutoPlay PokeMeow Discord 🤖
 The timings between each catchs and fishs are defined line 59 for the fishes and line 65 for classic pokemons. The bare minimum is 10seconds (or Pokemeow will tell you to wait).
 I would advise you to set it to a random number by replacing the `10` by something like `randint(10, 20)` (10 will be the minimum waiting time and 20 the maximum).
 
