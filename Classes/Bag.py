@@ -3,11 +3,11 @@ from re import sub
 class Bag():
 
     BALLS = {
-            "Masterballs"  : {"call":  "mb", "id_shop":    4, "stock": 0, "to_buy":    1, "price": 100000},
+            "Masterballs"  : {"call":  "mb", "id_shop":    4, "stock": 0, "to_buy":    1, "price": 100000}, # buy only if money > 109 000 coins
             "Premier balls": {"call": "prb", "id_shop": None, "stock": 0, "to_buy": None, "price":   None},
-            "Ultraballs"   : {"call":  "ub", "id_shop":    3, "stock": 0, "to_buy":    3, "price":   1500},
-            "Greatballs"   : {"call":  "gb", "id_shop":    2, "stock": 0, "to_buy":    5, "price":    500},
-            "Pokeballs"    : {"call":  "pb", "id_shop":    1, "stock": 0, "to_buy":    5, "price":    200},
+            "Ultraballs"   : {"call":  "ub", "id_shop":    3, "stock": 0, "to_buy":    3, "price":   1500}, # buy only if money >   9 000 coins
+            "Greatballs"   : {"call":  "gb", "id_shop":    2, "stock": 0, "to_buy":    5, "price":    500}, # buy only if money >   4 500 coins
+            "Pokeballs"    : {"call":  "pb", "id_shop":    1, "stock": 0, "to_buy":    5, "price":    200}, # buy only if money >   1 000 coins
             # "Diveballs"   : {"call":  "db", "id_shop": None, "stock": 0, "to_buy": None, "price":   None}
     }
 
