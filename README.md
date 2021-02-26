@@ -7,11 +7,22 @@ This bot can currently handle :
 1. All the checklist commands (so `;daily`, `;hunt` etc...)
 2. Vote for Pokemeow every 12H (can fail sometimes, top.gg added a captcha)
 3. Throw Pokeballs depending on the rarity of the Pokemon
-4. Buy Pokeballs when you're out of stock (only if you can buy a certain amount of each less effective balls)
+4. Buy Pokeballs when you're out of stock (only if you can buy a certain amount of each less effective balls : see dedicated section)
 5. Handle your eggs
 6. Use all your Repels and Golden Razz Berries
 7. Open every boxes in your bag
 8. Can fish for you (via an argument)
+
+## How buying works 
+With the default settings, the bot will buy :
+- 1 Masterball only if you have more than 109K coins
+- 3 Ultraballs if > 9K
+- 5 Superballs if > 4500
+- 5 Pokeballs if > 1k
+
+⚠️ So if it didn't bought any balls it means that you were a little bit too poor ⚠️ 
+
+This is a security to avoid situations where you buy 1 Masterball at 100K and don't have enought coins left to buy lesser effectives balls.
 
 ## Installating
 

@@ -1,0 +1,1 @@
+- `26 Feb 2021` : Added explanation on how buying works in the README file.
