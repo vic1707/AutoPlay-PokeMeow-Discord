@@ -154,8 +154,10 @@ class CustomDriver( webdriver.Firefox,
         for remaining in range(time, 0, -1):
             print(f"{remaining:2d}/{ time } seconds remaining before { arg }.", end = '\r')
             sleep(1)
-        stdout.write("\033[K")
-        stdout.flush()
+        if platform != 'win32':
+            stdout.write("\033[K")
+            stdout.flush()
+        else: print(' ' * 25)
 
     def WaitChangesOnMessage(self, to_send: str, message, 
                                    retry: int = NBR_MAX_RECURSION, number_of_sleep: Decimal = Decimal(4)) -> bool:
