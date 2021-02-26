@@ -44,6 +44,7 @@ class Fish():
             sleep(0.1)
         if 'PULL' in message.text: # there is a fish
             self.DRIVER.WaitChangesOnMessage('pull', message)
+            if 'got away' in message.text: return False, message, ''
             return True, message, sub( r'(.|\n)*?a wild (.*)!(.|\n)*', r'\2', message.text )
         elif 'got away' in message.text: return False, message, ''
         else: return None, message, ''
