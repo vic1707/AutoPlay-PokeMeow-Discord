@@ -70,7 +70,7 @@ class Bag():
         for index, ball in enumerate(self.BALLS.keys()):
             if self.BALLS[ball]['to_buy']    and \
                self.BALLS[ball]['stock'] < 1 and \
-               self.money >= sum( self.BALLS[ball]['price'] * self.BALLS[ball]['to_buy'] if self.BALLS[ball]['to_buy'] else 0 for ball in list(self.BALLS.keys())[index:]) + self.BALLS["Pokeballs"]['price'] * self.BALLS["Pokeballs"]['to_buy']: 
+               self.money >= sum( self.BALLS[ball]['price'] * self.BALLS[ball]['to_buy'] if self.BALLS[ball]['to_buy'] else 0 for ball in list(self.BALLS.keys())[index:]) + (self.BALLS["Pokeballs"]['price'] * self.BALLS["Pokeballs"]['to_buy'] if ball !='Pokeballs' else 0): 
                 print(f"Buying {self.BALLS[ball]['to_buy']} {ball} !")
                 self.DRIVER.WaitNew(f';shop buy { self.BALLS[ball]["id_shop"] } { self.BALLS[ball]["to_buy"] }', f'{ self.DRIVER.USERNAME }, you bought')
 
