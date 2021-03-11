@@ -7,7 +7,7 @@ class Checklists():
         'swap' : {'replace': r'\2', 'test': r'(.|\n)*You (.*?) .* swap(.|\n)*', 'fallback':   r'(.|\n)*swap.*in (.*)?.(.|\n)*', 'validator':       'can', 'do_when': None},
         'hunt' : {'replace': r'\2', 'test': r'(.|\n)*You (.*?) .* hunt(.|\n)*', 'fallback':   r'(.|\n)*hunt.*in (.*)?.(.|\n)*', 'validator':       'can', 'do_when': None},
         'quest': {'replace': r'\2', 'test':   r'(.|\n)*quest is (.*)?!(.|\n)*', 'fallback': r'(.|\n)*?quest.*in (.*)?.(.|\n)*', 'validator': 'available', 'do_when': None, 'cooldown':  120},
-        'vote' : {'replace': r'\2', 'test':    r'(.|\n)*vote is (.*)?!(.|\n)*', 'fallback':  r'(.|\n)*?vote.*in (.*)?.(.|\n)*', 'validator': 'available', 'do_when': None, 'cooldown':  720}
+        # 'vote' : {'replace': r'\2', 'test':    r'(.|\n)*vote is (.*)?!(.|\n)*', 'fallback':  r'(.|\n)*?vote.*in (.*)?.(.|\n)*', 'validator': 'available', 'do_when': None, 'cooldown':  720}
     }
 
     def __init__(self, driver):

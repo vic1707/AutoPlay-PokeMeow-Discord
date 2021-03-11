@@ -5,7 +5,9 @@ I would advise you to set it to a random number by replacing the `10` by somethi
 ## Supported features
 This bot can currently handle :
 1. All the checklist commands (so `;daily`, `;hunt` etc...)
+// NO VOTE ANYMORE BECAUSE CAPTCHA
 2. Vote for Pokemeow every 12H (can fail sometimes, top.gg added a captcha)
+// NO VOTE ANYMORE BECAUSE CAPTCHA
 3. Throw Pokeballs depending on the rarity of the Pokemon
 4. Buy Pokeballs when you're out of stock (only if you can buy a certain amount of each less effective balls : see dedicated section)
 5. Handle your eggs
