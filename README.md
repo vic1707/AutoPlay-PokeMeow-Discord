@@ -53,6 +53,10 @@ The following arguments depends on your personnal setup, and are optionnal :
 - `-H` : For Headless mode (without the Browser window), ⚠️ This will not work if you have activate 2FA !
 - `-D` : If you want to use another driver, Firefox is the default one. Add 'Chrome' after the flag in order to use Chrome.
 
+So to load the script you have to type in your Terminal or CMD some thing like : 
+`python bot.py -U 'John Doe' -M 'johndoe@gmail.com' -P 'mySuperPassword1234' -C 'CHANNEL LINK'` and every other flag needed for your use case.
+(or `python3` for Linux or MacOS)
+
 ⚠️ You can of course create a .sh or .bat file in order to execute the command without repetively type the command but rememeber this is a big security breach and we're not responsive for any dataleaking ⚠️
 
 ## Stoping
