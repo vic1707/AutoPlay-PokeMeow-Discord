@@ -1,7 +1,6 @@
-from PIL import Image, ImageOps, ImageEnhance
+from PIL import Image
 from natsort import natsorted
-from os import  listdir
-from re import sub
+from os import listdir
 
 def cleanImage( image ):
     proportion = {}
