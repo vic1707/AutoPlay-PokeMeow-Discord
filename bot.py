@@ -57,6 +57,7 @@ try:
             FEEDBACK.add_fish(fish)
             print(fish)
             DRIVER.attente( 10 , 'next catch')
+            BAG.reassort()
 
         pkmn = Pokemon(BAG, DRIVER)
         FEEDBACK.add_pkmn(pkmn)
