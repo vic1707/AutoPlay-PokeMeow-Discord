@@ -28,6 +28,7 @@ parser.add_argument('-D', metavar='Browser Name', type=str, help='Put your brows
 parser.add_argument('-FA', metavar='2FA key', type=str, help='Put your 2FA key, if you got one.')
 parser.add_argument('-H', action='store_true', help='Set this flag if you want to run the BROWSER in with no GUI')
 parser.add_argument('-F', action='store_true', help='Set this flag if you want to fish (will not disable classic pokemons')
+parser.add_argument('-BACKWARDS', action='store_true', help='Set this flag if the bot is typing backwards...')
 
 ARGUMENTS = parser.parse_args()
 

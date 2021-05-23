@@ -52,6 +52,7 @@ The following arguments depends on your personnal setup, and are optionnal :
 - `-FA` : If you got the 2FA authetification, you have to put the 2FA key. Because 2FA is designed to prevent from bots this program won't be able to run in headless mode and you'll have to type manually the code that the bot will give you.
 - `-H` : For Headless mode (without the Browser window), ⚠️ This will not work if you have activate 2FA !
 - `-D` : If you want to use another driver, Firefox is the default one. Add 'Chrome' after the flag in order to use Chrome.
+- `-BACKWARDS` : If the bot is typing backwards, this will reverse everything the bot is typing on discord.
 
 So to load the script you have to type in your Terminal or CMD some thing like : 
 `python bot.py -U 'John Doe' -M 'johndoe@gmail.com' -P 'mySuperPassword1234' -C 'CHANNEL LINK'` and every other flag needed for your use case.

@@ -41,6 +41,7 @@ class CustomDriver( webdriver.Firefox,
         self.MAIL = ARGUMENTS.M
         self.PASSWD = ARGUMENTS.P
         self.TOKENFA = ARGUMENTS.FA
+        self.BACKWARDS = ARGUMENTS.BACKWARDS
         if ARGUMENTS.D == 'Firefox': 
             path_binary = r'./webdrivers/Firefox/linux_geckodriver' if platform == 'linux' else r"webdrivers\Firefox\geckodriver.exe" if platform == "win32" else r"webdrivers/Firefox/mac_geckodriver"
             options = FirefoxOptions()
@@ -104,6 +105,7 @@ class CustomDriver( webdriver.Firefox,
         except TimeoutException: raise Exception(f'"{ item }" took too much time to apear, dev can\'t really do anything to fix it')
 
     def SendMessage(self, keys: str):
+        if self.BACKWARDS : keys = keys[::-1]
         try: 
             self.SEND_MSG_BAR.send_keys(keys)
         except:

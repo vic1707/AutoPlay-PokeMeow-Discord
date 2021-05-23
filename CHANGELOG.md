@@ -1,3 +1,4 @@
+- `23 May 2021` : Workaround Backwards typing by adding `-BACKWARDS` flag (issue #10).
 - `21 Mar 2021` : Fix pokeballs not being bought after fishes and before pokemon (issue #7).
 - `11 Mar 2021` : Remove Vote support because can't bypass capthca on top.gg.
 - `26 Feb 2021` : Added explanation on how buying works in the README file.
