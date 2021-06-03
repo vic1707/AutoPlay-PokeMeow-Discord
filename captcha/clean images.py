@@ -16,11 +16,11 @@ def cleanImage( image ):
         for x in range(image.size[0]):
             # if pixdata[x,y]!= Lproportions[1][0]:     # care about opacity
             if pixdata[x,y][0] != Lproportions[1][0][0] and pixdata[x,y][1] != Lproportions[1][0][1] and pixdata[x,y][2] != Lproportions[1][0][2]: # don't care about opacity
-                pixdata[x,y] = (255, 255, 255, 255)     # others will be white 
-                # pixdata[x,y] = (0, 0, 0, 255)         # others will be black 
+                # pixdata[x,y] = (255, 255, 255, 255)     # others will be white 
+                pixdata[x,y] = 0                          # others will be removed
             else:
-                # pixdata[x,y] = (255, 255, 255, 255)   # the pixels of the numbers will be white 
-                pixdata[x,y] = (0, 0, 0, 255)           # the pixels of the numbers will be black
+                pixdata[x,y] = (255, 255, 255, 255)       # the pixels of the numbers will be white 
+                # pixdata[x,y] = 0                        # the pixels of the numbers will be removed
     
     return image
 
