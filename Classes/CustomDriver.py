@@ -8,7 +8,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.edge.options import Options as EdgeOptions
+from msedge.selenium_tools import EdgeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.opera.options import Options as OperaOptions
 from selenium.webdriver.support import expected_conditions as EC
@@ -60,6 +60,7 @@ class CustomDriver( webdriver.Firefox,
         elif ARGUMENTS.D == 'Edge': 
             if platform == "win32": 
                 options = EdgeOptions()
+                options.use_chromium = True
                 options.binary_location = r"webdrivers\Edge\msedgedriver.exe"
                 if ARGUMENTS.H: options.headless = True
                 webdriver.Edge.__init__(self, options)
