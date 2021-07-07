@@ -65,7 +65,7 @@ To stop the program simply type Ctrl + C in the command promt, or close the brow
 
 
 ## Adding new webdrivers
-If you want youre favorite browser to be supported, visit : https://www.selenium.dev/documentation/en/getting_started_with_webdriver/browsers/ and see if your's part of the supported drivers of Selenium.
+If you want your favorite browser to be supported, visit : https://www.selenium.dev/documentation/en/getting_started_with_webdriver/browsers/ and see if your's part of the supported drivers of Selenium.
 
 
 ## Disclamer ⚠️
