@@ -8,7 +8,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options as ChromeOptions
-from msedge.selenium_tools import EdgeOptions
+# from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.opera.options import Options as OperaOptions
 from selenium.webdriver.support import expected_conditions as EC
@@ -59,11 +59,11 @@ class CustomDriver( webdriver.Firefox,
             webdriver.Opera.__init__(self, executable_path=path_binary, options=options)
         elif ARGUMENTS.D == 'Edge': 
             if platform == "win32": 
-                options = EdgeOptions()
-                options.use_chromium = True
-                options.binary_location = r"webdrivers\Edge\msedgedriver.exe"
-                if ARGUMENTS.H: options.headless = True
-                webdriver.Edge.__init__(self, options)
+                # options = EdgeOptions()
+                # options.use_chromium = True
+                path = r"webdrivers\Edge\msedgedriver.exe"
+                # if ARGUMENTS.H: options.headless = True
+                webdriver.Edge.__init__(self, path)
             else: raise Exception("Edge is only supported on Windows ! ")
         else: 
             print('Unsupported driver, please use only "Firefox", "Opera", "Edge" or "Chrome".')
