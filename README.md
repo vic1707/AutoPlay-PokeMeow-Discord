@@ -31,7 +31,7 @@ This is a security to avoid situations where you buy 1 Masterball at 100K and do
 ### On your pc
 1. Install your favorite version of python 3 and add it to PATH.
 2. If not done already download this repo on your computer as zip and unzip it.
-3. Inside of the repo type the following command `python -m pip install -r requirments.txt` (If your on a linux distribution or MacOS you got a specify the python version so it's `python3 ...`)
+3. Inside of the repo type the following command `python -m pip install -r requirements.txt` (If your on a linux distribution or MacOS you got a specify the python version so it's `python3 ...`)
 
 ### On your discord
 4. a. You got to activate your Pokemeow account (type `;p` at least once)
