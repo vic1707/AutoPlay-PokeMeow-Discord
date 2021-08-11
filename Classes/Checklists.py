@@ -39,7 +39,7 @@ class Checklists():
     def verify_checklist(self):
         did_task = False
         for task in self.CHECKLIST:
-            if self.CHECKLIST[task]['do_when'] < datetime.now():
+            if self.CHECKLIST[task]['do_when'] and self.CHECKLIST[task]['do_when'] < datetime.now():
                 if task != 'vote': 
                     self.DRIVER.WaitNew(f';{ task }', f'{ task }')
                     did_task = True
