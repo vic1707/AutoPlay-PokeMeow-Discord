@@ -1,3 +1,14 @@
+# ⚠️ This project is not updated anymore (I may come see the issues every once in a while)
+
+I'm not using this bot anymore, but it should still be working great. 
+The most common and known issues are :
+- not being able to launch the browser -> this is due to the webdrivers provided in this repo being out of date for most of them, try updating them by downloading the latest versions and replacing the existing files (**keep the same names**).
+- Unable to resolve a **login** captcha -> that's unfortunately normal, bot controlled browser cause this, we can't do anything to it.
+
+If my bot doesn't work for you I would advise you to try [the one created by Mehul343](https://github.com/Mehul343/PokeMeow-Auto-Grind-with-Captcha-Solver) which shouldn't encounter login issues since it logs in via the discord API (far better than using a browser!).
+
+# + be aware that i won't answer any incomplete issue, I need the command used (hide your credentials), a screenshot of the cmd prompt and context of the browser window
+
 # AutoPlay PokeMeow Discord 🤖
 The timings between each catchs and fishs are defined line 60 for the fishes and line 67 ( both in `bot.py`) for classic pokemons. The bare minimum is 10seconds (or Pokemeow will tell you to wait).
 I would advise you to set it to a random number by replacing the `10` by something like `randint(10, 20)` (10 will be the minimum waiting time and 20 the maximum).
@@ -55,7 +66,7 @@ The following arguments depends on your personnal setup, and are optionnal :
 - `-BACKWARDS` : If the bot is typing backwards, this will reverse everything the bot is typing on discord.
 
 So to load the script you have to type in your Terminal or CMD some thing like : 
-`python bot.py -U 'John Doe' -M 'johndoe@gmail.com' -P 'mySuperPassword1234' -C 'CHANNEL LINK'` and every other flag needed for your use case.
+`python bot.py -U 'John Doe' -M 'johndoe@gmail.com' -P 'dQw4w9WgXcQ' -C 'CHANNEL LINK'` and every other flag needed for your use case.
 (or `python3` for Linux or MacOS)
 
 ⚠️ You can of course create a .sh or .bat file in order to execute the command without repetively type the command but rememeber this is a big security breach and we're not responsive for any dataleaking ⚠️
