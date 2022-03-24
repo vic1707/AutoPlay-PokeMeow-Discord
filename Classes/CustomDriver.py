@@ -32,7 +32,7 @@ class CustomDriver( webdriver.Firefox,
     LAST_MSG = None
     NBR_MAX_RECURSION: int = 4
 
-    MSG_XPATH: str = "//div[contains(@class,'message-2qnXI6 cozyMessage-3V1Y8y')]"
+    MSG_XPATH: str = "//div[contains(@class,'message-2CShn3 cozyMessage-1DWF9U')]"
     POKEMEOW_USERNAME: str = 'PokéMeow'
 
     def __init__(self, ARGUMENTS):
