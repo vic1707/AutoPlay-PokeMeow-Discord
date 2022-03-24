@@ -27,7 +27,7 @@ class CustomDriver( webdriver.Firefox,
     # <input id="votingvoted" type="button" class="voting btn btn-orange btn-4x vote-button" value="Vote">
     # MODIFIER = Keys.COMMAND if platform == "win32" or platform == 'linux' else Keys.COMMAND
 
-    SEND_MSG_BAR_XPATH: str = "//div[@class='markup-2BOw-j slateTextArea-1Mkdgw fontSize16Padding-3Wk7zP']"
+    SEND_MSG_BAR_XPATH: str = "//div[@class='markup-eYLPri slateTextArea-27tjG0 fontSize16Padding-XoMpjI']"
     SEND_MSG_BAR = None
     LAST_MSG = None
     NBR_MAX_RECURSION: int = 4
