@@ -5,7 +5,8 @@ The most common and known issues are :
 - not being able to launch the browser -> this is due to the webdrivers provided in this repo being out of date for most of them, try updating them by downloading the latest versions and replacing the existing files (**keep the same names**).
 - Unable to resolve a **login** captcha -> that's unfortunately normal, bot controlled browser cause this, we can't do anything to it.
 
-If my bot doesn't work for you I would advise you to try [the one created by Mehul343](https://github.com/Mehul343/PokeGrinder) which shouldn't encounter login issues since it logs in via the discord API (far better than using a browser!).
+~~If my bot doesn't work for you I would advise you to try [the one created by Mehul343](https://github.com/Mehul343/PokeGrinder) which shouldn't encounter login issues since it logs in via the discord API (far better than using a browser!).~~
+His repo was deleted.
 
 # + be aware that i won't answer any incomplete issue, I need the command used (hide your credentials), a screenshot of the cmd prompt and context of the browser window
 
