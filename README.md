@@ -1,4 +1,4 @@
-# ⚠️ This project is not updated anymore (I may come see the issues every once in a while)
+# ⚠️ This project is not updated anymore and won't ever be, Pokemeow moved to slashcommand and I don't want to rework on that project anymore. The logic should still be fine and replacing the `CustiomDriver` with slashSommands interactions should be enough to get it to work again.
 
 I'm not using this bot anymore, but it should still be working great. 
 The most common and known issues are :
